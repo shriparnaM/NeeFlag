@@ -1,0 +1,63 @@
+<html>
+    <head>
+<script src="main.js"></script>
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <img id="imgFlagName11">
+
+            <br>
+            <input id="inputCountryName" oninput="loadFlag()">
+            
+
+
+
+            <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                <h2 class="text-capitalize ">FLAGS</h2>
+            </div>
+          
+          
+            
+          <div class=" flag"  data-toggle="modal" data-target="#Flag">
+
+            <center>
+                <img id="imgFlagName"  class="img-responsive">
+            </center>
+            <hr >
+            <p id="pHeading" class="text-primary"></p>
+          </div>
+        
+        
+          <div class="modal fade" id="Flag">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content" >
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 id="h4FlagHeading" class="modal-title" ></h4>
+                </div>
+                
+                <div class="modal-body flag">
+                  <img id="imgFlagNameBig"  class="img-responsive img_modal">
+                  <p id="pFlagDesc" class="p_modal">
+                  
+                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+    </body>
+</html>
